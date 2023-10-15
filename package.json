@@ -1,0 +1,30 @@
+{
+	"name": "discordjs-boilerplate",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"bin": "index.ts",
+	"scripts": {
+		"start": "cross-env NODE_ENV=production NODE_NO_WARNINGS=1 node -r ts-node/register index.ts",
+		"dev": "cross-env NODE_ENV=development NODE_NO_WARNINGS=1 node -r ts-node/register index.ts",
+		"dev:watch": "cross-env NODE_ENV=development NODE_NO_WARNINGS=1 nodemon --exec ts-node index.ts"
+	},
+	"author": "jwkwon0817",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@babel/cli": "^7.23.0",
+		"@babel/core": "^7.23.2",
+		"@babel/node": "^7.22.19",
+		"@babel/preset-env": "^7.23.2",
+		"@discordjs/rest": "^2.0.1",
+		"@types/node": "^20.8.6",
+		"core-js": "3",
+		"discord-api-types": "^0.37.60",
+		"discord.js": "^14.7.1",
+		"dotenv": "^16.0.2"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"nodemon": "^2.0.19"
+	}
+}
